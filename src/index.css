@@ -1,0 +1,174 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: hsl(220 30% 98%); /* subtle cool background */
+    --foreground: hsl(240 30% 15%); /* darker for better contrast */
+
+    --card: hsla(0 0% 100% / 0.7); /* semi-transparent for glass effect */
+    --card-foreground: hsl(240 30% 15%); /* darker for better contrast */
+ 
+    --popover: hsla(0 0% 100% / 0.8);
+    --popover-foreground: hsl(240 30% 15%); /* darker for better contrast */
+ 
+    --primary: hsl(190 95% 45%); /* vibrant cyan/teal as primary */
+    --primary-foreground: hsl(0 0% 100%);
+ 
+    --secondary: hsl(260 80% 65%); /* rich purple as secondary */
+    --secondary-foreground: hsl(0 0% 100%);
+ 
+    --muted: hsla(220 30% 94% / 0.8);
+    --muted-foreground: hsl(240 20% 35%); /* darker for better contrast */
+ 
+    --accent: hsl(320 80% 65%); /* vibrant magenta accent */
+    --accent-foreground: hsl(0 0% 100%);
+ 
+    --destructive: hsl(0 90% 60%);
+    --destructive-foreground: hsl(0 0% 98%);
+
+    --border: hsla(220 30% 85% / 0.5); /* semi-transparent borders */
+    --input: hsla(220 30% 94% / 0.8);
+    --ring: hsl(190 95% 55%); /* bright cyan ring */
+ 
+    --radius: 1.25rem; /* larger radius for modern look */
+
+    /* Custom Colors */
+    --teal: 190 95% 45%;
+    --indigo: 260 80% 65%;
+    --soft-white: 220 30% 98%;
+    --light-teal: 190 95% 90%;
+    --light-indigo: 260 80% 90%;
+    
+    /* New vibrant colors */
+    --magenta: 320 80% 65%;
+    --gold: 45 95% 65%;
+    --emerald: 160 95% 45%;
+    --sapphire: 220 95% 65%;
+    --amber: 30 95% 65%;
+    
+    /* Glass effect variables */
+    --glass-bg: hsla(0 0% 100% / 0.15);
+    --glass-border: hsla(0 0% 100% / 0.2);
+    --glass-shadow: 0 8px 32px 0 hsla(0 0% 0% / 0.1);
+    --glass-blur: 8px;
+  }
+ 
+  .dark {
+    --background: hsl(240 30% 8%);
+    --foreground: hsl(220 20% 98%);
+
+    --card: hsla(240 30% 12% / 0.7); /* semi-transparent for glass effect */
+    --card-foreground: hsl(220 20% 98%);
+ 
+    --popover: hsla(240 30% 12% / 0.8);
+    --popover-foreground: hsl(220 20% 98%);
+ 
+    --primary: hsl(190 90% 55%);
+    --primary-foreground: hsl(240 30% 10%);
+ 
+    --secondary: hsl(260 80% 70%);
+    --secondary-foreground: hsl(240 30% 10%);
+ 
+    --muted: hsla(240 25% 20% / 0.8);
+    --muted-foreground: hsl(220 25% 80%);
+ 
+    --accent: hsl(320 80% 70%);
+    --accent-foreground: hsl(240 30% 10%);
+ 
+    --destructive: hsl(0 90% 60%);
+    --destructive-foreground: hsl(0 0% 98%);
+
+    --border: hsla(240 30% 40% / 0.3);
+    --input: hsla(240 30% 30% / 0.8);
+    --ring: hsl(190 90% 65%);
+    
+    /* Glass effect variables - dark mode */
+    --glass-bg: hsla(240 30% 30% / 0.15);
+    --glass-border: hsla(240 30% 50% / 0.2);
+    --glass-shadow: 0 8px 32px 0 hsla(0 0% 0% / 0.3);
+  }
+}
+ 
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+  }
+  h1,h2,h3,h4,h5,h6 {
+    @apply font-semibold tracking-tight;
+  }
+  h1 { @apply text-4xl sm:text-5xl md:text-6xl font-bold; }
+  h2 { @apply text-3xl sm:text-4xl font-bold; }
+  h3 { @apply text-2xl sm:text-3xl; }
+  p { @apply leading-relaxed text-lg; }
+  
+  /* Modern button styles */
+  .btn-modern {
+    @apply rounded-full px-6 py-3 font-medium transition-all duration-300 shadow-md hover:shadow-lg;
+  }
+  
+  /* Modern card styles */
+  .card-modern {
+    @apply rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden;
+  }
+  
+  /* Glass effect styles */
+  .glass {
+    @apply bg-opacity-30 backdrop-blur-md border border-opacity-30 shadow-lg;
+    background: var(--glass-bg);
+    border-color: var(--glass-border);
+    box-shadow: var(--glass-shadow);
+    backdrop-filter: blur(var(--glass-blur));
+  }
+  
+  /* Gradient text */
+  .text-gradient-primary {
+    @apply text-transparent bg-clip-text font-bold;
+    background-image: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--sapphire)));
+    text-shadow: 0 0 1px rgba(0,0,0,0.1);
+  }
+  
+  .text-gradient-secondary {
+    @apply text-transparent bg-clip-text font-bold;
+    background-image: linear-gradient(135deg, hsl(var(--secondary)), hsl(var(--accent)));
+    text-shadow: 0 0 1px rgba(0,0,0,0.1);
+  }
+  
+  .text-gradient-gold {
+    @apply text-transparent bg-clip-text font-bold;
+    background-image: linear-gradient(135deg, hsl(var(--gold)), hsl(var(--amber)));
+    text-shadow: 0 0 1px rgba(0,0,0,0.1);
+  }
+  
+  /* Shiny effect */
+  .shiny {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .shiny::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, transparent, rgba(255,255,255,0.1), transparent);
+    transform: rotate(30deg);
+    animation: shine 6s infinite linear;
+  }
+  
+  @keyframes shine {
+    0% { transform: translateX(-100%) rotate(30deg); }
+    100% { transform: translateX(100%) rotate(30deg); }
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
