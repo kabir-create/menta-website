@@ -182,7 +182,7 @@ const privacySections = [
     content: (
       <>
         In accordance with Indian law and IT Rules, we have appointed a Grievance Officer:<br />
-        <b>Grievance Officer:</b> Ayush Kumar<br />
+        <b>Grievance Officer:</b>Name<br />
         <b>Email:</b> <a href="mailto:support@mentamind.in" className="text-primary underline">support@mentamind.in</a><br />
         <b>Phone:</b> +91-7488922614<br />
         <b>Postal address:</b> Mentamind Technologies Pvt. Ltd., 803 Mahabir Tower, Opp. JD High Street Mall, Main Road, Ranchi – 834001, Jharkhand, India.<br />
@@ -248,7 +248,7 @@ const privacySections = [
     content: (
       <>
         For privacy queries, requests and complaints:<br />
-        <b>Grievance Officer:</b> Ayush Kumar<br />
+        <b>Grievance Officer:</b> <br />
         <b>Email:</b> <a href="mailto:support@mentamind.in" className="text-primary underline">support@mentamind.in</a><br />
         <b>Phone:</b> +91-7488922614<br />
         <b>Postal address:</b> 803 Mahabir Tower, Opp. JD High Street Mall, Main Road, Ranchi – 834001, Jharkhand, India.<br />
@@ -293,16 +293,16 @@ const PrivacyPolicyPage = () => {
           <h1 className="text-2xl font-bold text-center text-black">Privacy Policy</h1>
           <p className="text-xs text-black/60 mt-1 text-center">
             Mentamind Technologies Private Limited<br />
-            <span className="font-medium">Effective date:</span> 21st January 2025 &nbsp;|&nbsp; <span className="font-medium">Last updated:</span> 5th July 2025
+            {/* <span className="font-medium">Effective date:</span> 21st January 2025 &nbsp;|&nbsp; <span className="font-medium">Last updated:</span> 5th July 2025 */}
           </p>
         </div>
         <div className="mt-24 max-h-[60vh] overflow-y-auto pr-2 custom-scrollbar">
-          {privacySections.map((section) => (
+          {/* {privacySections.map((section) => (
             <div key={section.heading} className="mb-7">
               <h2 className="font-semibold text-lg text-primary mb-2">{section.heading}</h2>
               <div className="text-black/80 text-sm leading-relaxed">{section.content}</div>
             </div>
-          ))}
+          ))} */}
         </div>
       </div>
       <style>

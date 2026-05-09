@@ -158,11 +158,11 @@ const WhyMentamindPage = () => {
                 repeatType: "reverse" 
               }}
             />
-            <img  
+            {/* <img  
               alt="Portrait of Mentamind founder" 
               className="w-48 h-48 rounded-full object-cover shadow-lg border-4 border-white relative z-10"
               src={img}
-            />
+            /> */}
           </motion.div>
           <div className="text-center md:text-left">
             <motion.h2 
@@ -181,7 +181,7 @@ const WhyMentamindPage = () => {
               viewport={{ once: true }}
               transition={{ delay: 0.3 }}
             >
-              "Mentamind was born from a deeply personal understanding of the challenges many face in accessing timely and stigma-free mental health support. Our founder, Mr Ayush Kumar - CEO, envisioned a world where compassionate care is available to everyone, anytime, anywhere." 
+              "Mentamind was born from a deeply personal understanding of the challenges many face in accessing timely and stigma-free mental health support. We envisioned a world where compassionate care is available to everyone, anytime, anywhere." 
             </motion.p>
             <motion.p 
               className="text-black/80 text-lg"

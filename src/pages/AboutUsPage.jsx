@@ -126,7 +126,7 @@ const AboutUsPage = () => {
           <h2 className="text-3xl font-semibold text-black mb-6">Our Story</h2>
           <div className="space-y-4 text-black/80">
             <p>
-              Mentamind was founded in 2022 with a clear vision: to make mental healthcare accessible, stigma-free, and personalized for everyone. Our founder, Ayush Kumar, experienced firsthand the challenges of accessing timely mental health support during a difficult period in his life.
+              Mentamind was founded in 2022 with a clear vision: to make mental healthcare accessible, stigma-free, and personalized for everyone.
             </p>
             <p>
               This personal journey sparked the idea for a platform that combines cutting-edge technology with human empathy to provide support when and where it's needed most. Starting with a small team of passionate mental health advocates and technology experts, Mentamind quickly grew into the comprehensive mental wellness platform it is today.
@@ -275,8 +275,8 @@ const AboutUsPage = () => {
           />
         </div>
       </section> */}
-
-      {/* Our Journey Timeline */}
+{/* 
+      Our Journey Timeline
       <section className="max-w-4xl mx-auto bg-white/80 backdrop-blur-md p-8 md:p-12 rounded-xl shadow-lg border border-glass-border">
         <motion.h2 
           className="text-3xl font-semibold text-center mb-10 text-black"
@@ -359,7 +359,7 @@ const AboutUsPage = () => {
       </section>
 
       {/* Awards & Recognition */}
-      <section className="relative">
+      {/* <section className="relative">
         <div className="absolute inset-0 -z-10 overflow-hidden">
           <motion.div 
             className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-gradient-to-r from-primary/10 to-sapphire/10 rounded-full blur-3xl"
@@ -403,7 +403,7 @@ const AboutUsPage = () => {
             </div>
           </motion.div>
         </div>
-      </section>
+      </section> */} 
 
       {/* Join Our Team */}
       {/* <section className="text-center py-10 relative">

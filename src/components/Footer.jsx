@@ -234,7 +234,7 @@ const Footer = () => {
               <p className="text-xs text-black/80">Get updates on mental wellness tips and product news.</p>
             </form>
             
-            <div className="flex space-x-3 mt-8">
+            {/* <div className="flex space-x-3 mt-8">
               {[
                 { icon: <Facebook size={18} />, href: "", color: "from-primary to-sapphire" },
                 { icon: <Twitter size={18} />, href: "https://x.com/MentamindT40030", color: "from-sapphire to-emerald" },
@@ -254,7 +254,7 @@ const Footer = () => {
                   <div className="relative z-10">{social.icon}</div>
                 </motion.a>
               ))}
-            </div>
+            </div> */}
           </motion.div>
         </motion.div>
         
